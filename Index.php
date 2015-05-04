@@ -9,16 +9,16 @@
 	
   <link rel="stylesheet" href="jquery-validation-1.13.1/demo/css/screen.css">	
   <script src="//cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.js"></script>
-  <link rel="stylesheet" href="Paneles de la aplicacion.css">
+  <link rel="stylesheet" type="text/css"  href="Paneles de la aplicacion.css">
   <script>
-      //$(function() {
-      //   $( "input[type=submit]" )
-      //    .button()
-      //   .click(function( ) {
-      //   var validator = $( "#signupForm" ).validate();
-      // validator.form();            
-      // });
-      //});
+      $(function() {
+         $( "input[type=submit]" )
+          .button()
+         .click(function( ) {
+         var validator = $( "#signupForm" ).validate();
+       validator.form();            
+       });
+      });
 
       $(function () {
           $("#date").datepicker({
@@ -134,21 +134,12 @@
           });
       });
   </script>
-	<style>
-	#signupForm {
-		width: 670px;
-	}
-	#signupForm label.error {
-		margin-left: 10px;
-		width: auto;
-		display: inline;
-	}
-	</style>
+
 </head>
 <body>
-
+<div id = "h101"><h1>Person Manager</h1></div>
 <div id="tabs">
-    <h1>Person Manager</h1>
+   
   <ul>
     <li><a href="#tabs-1">New Person</a></li>
     <li><a href="#tabs-2">View Persons</a></li>
@@ -268,8 +259,8 @@
     </fieldset>
     </form> 
   </div>
-    <p>Copyright 2015 ivalop81@gmail.comn</p>
-</div>
     
+</div>
+ <div><p id ="p01">Copyright 2015 Universidad Catolica Nuestra Señora de la Asunbcion</p></div>
 </body>
 </html>
